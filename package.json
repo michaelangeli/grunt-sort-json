@@ -1,0 +1,19 @@
+{
+  "name": "grunt-sort-json",
+  "version": "0.0.1",
+  "description": "Grunt task for alphabetizing json files",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "keywords": [
+    "gruntplugin",
+    "json",
+    "sort",
+    "alphabetize",
+    "grunt",
+    "task"
+  ],
+  "author": "Andrew Mead",
+  "license": "BSD"
+}
