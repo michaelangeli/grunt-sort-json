@@ -1,7 +1,7 @@
 {
   "name": "grunt-sort-json",
-  "version": "0.0.1",
-  "description": "A grunt task for alphabetizing JSON files",
+  "version": "0.0.2",
+  "description": "Alphabetizing JSON files. Sort JSON files.",
   "main": "index.js",
   "scripts": {
     "test": "grunt test"
