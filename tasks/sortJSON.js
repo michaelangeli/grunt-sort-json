@@ -3,7 +3,7 @@
 module.exports = function (grunt) {
 
     /**
-     * recursive sorting of object
+     * recursively sort a given object
      *
      * @method recursiveSort
      * @param {Object} obj
