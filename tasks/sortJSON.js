@@ -45,7 +45,7 @@ module.exports = function (grunt) {
     //
     // register tags grunt task
     //
-    grunt.registerMultiTask('sortJSON', 'A grunt task for alphabetizing json files', function () {
+    grunt.registerMultiTask('sortJSON', 'Alphabetizing JSON files. Sort JSON files.', function () {
         this.filesSrc.forEach(function (file) {
             sortFile(file);
         });
