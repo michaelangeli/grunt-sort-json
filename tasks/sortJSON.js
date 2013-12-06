@@ -1,7 +1,3 @@
-//
-// Written By Andrew Mead
-// github.com/andrewjmead
-//
 'use strict';
 
 module.exports = function (grunt) {
