@@ -13,13 +13,16 @@ module.exports = function (grunt) {
         var orderedAttributes = Object.keys(obj).sort();
         var newObject = {};
         var i;
+        var attr;
 
         for (i = 0; i < orderedAttributes.length; i++) {
-            newObject[orderedAttributes[i]] = obj[orderedAttributes[i]];
+            attr = orderedAttributes[i];
+
+            newObject[attr] = obj[attr];
 
             // if it's an object, sort it!
-            if (typeof obj[orderedAttributes[i]] === 'object') {
-                newObject[orderedAttributes[i]] = recursiveSort(newObject[orderedAttributes[i]]);
+            if (typeof obj[attr] === 'object') {
+                newObject[attr] = recursiveSort(newObject[attr]);
             }
         }
 
@@ -33,8 +36,8 @@ module.exports = function (grunt) {
      * @param {String} file Path to source file
      */
     function sortFile (file) {
-        var fileContents = grunt.file.readJSON(file);
-        var sortedObject = recursiveSort(fileContents);
+        var object = grunt.file.readJSON(file);
+        var sortedObject = recursiveSort(object);
 
         grunt.file.write(file, JSON.stringify(sortedObject, null, 4));
     }
